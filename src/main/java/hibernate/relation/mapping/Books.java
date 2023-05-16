@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 //import antlr.collections.List;
 import java.util.List;
@@ -24,7 +25,7 @@ public class Books {
 	public void setC(List<Customers> c) {
 		this.c = c;
 	}
-	@ManyToOne
+	@OneToMany
 	public List<Customers> c = new ArrayList();
 	
 	public int getBook_id() {

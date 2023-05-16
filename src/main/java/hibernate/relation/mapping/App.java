@@ -25,8 +25,9 @@ public class App
         Session session = factory.openSession();
         Transaction tx = session.beginTransaction();
         
-        List<Customers> customers= new ArrayList();
+        
         for (int i =1;i <=3;i++) {
+        	List<Customers> customers= new ArrayList();
         	Books b1 = new Books();
         	Customers c1 = new Customers();
         	Author a1 = new Author();
